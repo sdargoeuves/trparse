@@ -1,10 +1,23 @@
-traceroute to 10xhostings.com (104.18.42.178), 30 hops max, 40 byte packets
- 1  * * *
- 2  Internal (Internal)  0.894 ms  0.890 ms  0.876 ms
- 3  204.141.42.25 (204.141.42.25)  2.818 ms  2.825 ms  2.825 ms
- 4  204.141.42.9 (204.141.42.9)  1.014 ms  1.017 ms  1.082 ms
- 5  xe-0-0-46-2.a00.sttlwa01.us.bb.gin.ntt.net (128.241.1.145)  30.105 ms  30.125 ms  30.125 ms
- 6  ae-9.r04.sttlwa01.us.bb.gin.ntt.net (129.250.5.117)  32.346 ms  31.946 ms  31.960 ms
- 7  ae-0.a01.sttlwa01.us.bb.gin.ntt.net (129.250.5.86)  32.836 ms  32.749 ms  32.743 ms
- 8  ae-0.cloudflare.sttlwa01.us.bb.gin.ntt.net (131.103.117.86)  44.601 ms  42.886 ms  42.874 ms
- 9  104.18.42.178 (104.18.42.178)  29.614 ms  29.690 ms  30.461 ms
+traceroute to 10.76.227.1 (10.76.227.1), 30 hops max, 60 byte packets
+  1 10.252.39.99 0 msec
+    10.252.39.108 0 msec -------------------> Telefonica VOLVO_BRA_CURITIBA_PRI
+    10.252.39.99 0 msec
+  2  *  *  *
+  3 10.252.231.22 [AS 12956] [MPLS: Label 262350 Exp 0] 17 msec 25 msec 19 msec
+  4 10.252.231.21 [AS 12956] 26 msec 34 msec 23 msec
+  5  *
+    5.53.5.97 [AS 65418] [MPLS: Labels 48927/8552 Exp 2] 173 msec 161 msec
+  6 94.142.98.155 [AS 65418] [MPLS: Labels 64606/8552 Exp 2] 159 msec
+    94.142.99.163 [AS 65418] [MPLS: Labels 64009/8552 Exp 2] 164 msec
+    5.53.5.99 [AS 65418] [MPLS: Labels 739/8552 Exp 2] 176 msec
+  7  *
+    94.142.99.148 [AS 65418] [MPLS: Labels 64358/8552 Exp 2] 149 msec
+    94.142.117.52 [AS 65418] [MPLS: Labels 64358/8552 Exp 2] 135 msec
+  8 10.252.226.145 [AS 12956] 145 msec 143 msec 155 msec
+  9 10.252.226.146 [AS 12956] 149 msec 182 msec 160 msec------------> Ashburn Telefonica VOLV-USA-INT-MW-M-073983
+ 10 10.252.226.149 [AS 64990] 156 msec 155 msec 158 msec------------> Ashburn COR router hcl-us-ash-coR-01
+ 11 10.252.53.160 [AS 65161] 138 msec 155 msec 151 msec-------------> Ashburn Telus ASBNVACY-VOLVO01
+ 12 10.77.5.133 [AS 65102] 167 msec 177 msec 154 msec
+ 13 10.77.5.14 [AS 65102] 216 msec 214 msec 222 msec
+ 14 10.77.5.13 [AS 65102] 197 msec 199 msec 216 msec----------------> Calgary Telus CLGRABBJ-VOLVO01
+ 15 10.252.81.2 [AS 65002] 190 msec *  186 msec

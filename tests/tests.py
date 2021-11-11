@@ -1,11 +1,12 @@
 #!/usr/bin/python
 import sys
 import glob
+from unittest import TestCase
+sys.path.append("../")
 import trparse
 
-from unittest import TestCase
-
 FILE_PATTERN = './data/*.txt'
+
 
 
 class TracerouteTestCase(TestCase):
@@ -15,6 +16,7 @@ class TracerouteTestCase(TestCase):
 
     def test_simple(self):
         for filename in self.filenames:
+            print(filename)
             with open(filename, 'r') as f:
                 tr = trparse.load(f)
-                str(tr)
+                print(f"result:\n{str(tr)}")
